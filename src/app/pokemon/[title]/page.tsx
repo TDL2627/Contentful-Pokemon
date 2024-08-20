@@ -10,7 +10,6 @@ interface CardPageProps {
 
 export default async function CardPage({ params }: CardPageProps) {
   const card = await getSingleCard(params.title);
-  console.log(card, "aye");
 
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">

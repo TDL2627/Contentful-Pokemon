@@ -2,12 +2,8 @@ import { getAllCards, getSingleCard } from "./queries";
 import Link from "next/link";
 
 export default async function Home() {
-  console.log("ayee 1");
 
   const cards = await getAllCards();
-  const card = await getSingleCard("Charmander");
-  console.log(cards, "ayee");
-  // console.log(card,"aye single");
 
   return (
     <div className="w-full min-h-screen flex flex-col items-center justify-center bg-gray-100 p-4">

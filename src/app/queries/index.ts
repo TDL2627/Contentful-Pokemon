@@ -44,7 +44,6 @@ export async function getAllCards(
         }`,
     isDraftMode
   );
-  console.log(cards,"aye cc");
   
   return extractEntries(cards);
 }
